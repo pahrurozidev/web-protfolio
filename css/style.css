@@ -1,0 +1,447 @@
+@font-face {
+  font-family: "quicksand";
+  src: url(../font/Quicksand_Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "quicksand";
+  color: rgba(0, 0, 0, 0.6);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  transform: translateX(-74.5%);
+  transition: all 0.5s;
+  position: fixed;
+  z-index: 99;
+  border-right: 1px solid silver;
+  box-sizing: border-box;
+}
+
+nav .navbar-nav {
+  height: 50%;
+  margin-left: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav .icon-author {
+  position: relative;
+  bottom: 0;
+}
+
+nav a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+nav .nav-item {
+  height: 2em;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-item:hover {
+  transform: translateX(-0.2em);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav img {
+  margin-left: 1em;
+  height: 65%;
+  border-radius: 0.2em;
+  padding: 0.3em;
+  transition: 0.6em;
+}
+
+.slide {
+  transform: translateX(0em);
+}
+
+.content {
+  text-align: justify;
+  padding: 0 0 0 3.9em;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+section {
+  padding-bottom: 15em;
+}
+
+section h3::after {
+  content: "";
+  width: 5em;
+  height: 0.2em;
+  display: block;
+  border-radius: 50%;
+  margin: 0.5em auto 0.3em;
+}
+
+/* home */
+#home {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+#home h4 {
+  font-size: 1.5em;
+}
+
+#home img {
+  width: 25%;
+}
+
+.job {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.job span {
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.job h2 {
+  font-size: 2.5em;
+}
+
+.job h3 {
+  font-size: 2em;
+}
+
+/* about */
+#about h3 {
+  padding-bottom: 1em;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .image {
+  position: relative;
+}
+
+.about .box {
+  width: 10.8em;
+  height: 12.7em;
+  position: absolute;
+  top: 1.5em;
+  left: -1.3em;
+  z-index: 1;
+}
+
+.about img {
+  width: 12em;
+  box-shadow: -.5px .5px .5px silver;
+  position: relative;
+  z-index: 2;
+  margin-right: 10px;
+  border-radius: 40px 5px;
+}
+
+.about p {
+  width: 50%;
+  padding: 0 1em 1em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  text-indent: 4em;
+  font-family: 'quicksand', Arial, Helvetica, sans-serif;
+}
+
+/* collections */
+#collections .row {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.card {
+  width: 20%;
+  margin: 0.5em;
+  padding: 1em 0;
+  transition: all 0.3s;
+  box-shadow: .5px .5px 3px silver;
+  cursor: pointer;
+  position: relative;
+}
+
+.card .image {
+  position: absolute;
+  bottom: 1em;
+}
+
+.card img {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card h4 {
+  margin-bottom: 1em;
+}
+
+.card button {
+  padding: 0.5em 1.8em;
+  transition: all 0.3s;
+}
+
+.card:hover button {
+  cursor: pointer;
+}
+
+/* contact */
+#contact {
+  display: flex;
+}
+
+#author {
+  width: 50%;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: .5px .5px .5px silver;
+  box-sizing: border-box;
+}
+
+#author .hero-author {
+  border-radius: 50%;
+}
+
+#author h2 {
+  margin-top: 10px;
+}
+
+#author p {
+  font-size: small;
+  margin-top: 10px;
+  line-height: 1.5em;
+}
+
+#author .sosmed {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: auto;
+  margin: 20px auto;
+}
+
+.form {
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: -.5px .5px .5px silver;
+  box-sizing: border-box;
+}
+
+.form h4 {
+  text-align: center;
+}
+
+.form ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.form ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form li input,
+.form li button,
+.form li textarea {
+  padding: 5px;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+
+.form li label {
+  margin-bottom: 5px;
+}
+
+.form .form-group {
+  margin-top: 40px;
+}
+
+
+footer .row {
+  height: 5em;
+  font-size: medium;
+  margin: auto;
+  padding: 0 0 0.5em 2.9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  #author .sosmed {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+
+  /* navbar */
+  nav {
+    transform: translateX(-79%);
+  }
+
+  nav .navbar-nav,
+  nav .icon-author {
+    margin-right: -0.5em;
+  }
+
+  /* content */
+  .content {
+    padding: 0 0 0 3.2em;
+  }
+
+  /* section */
+  section h3 {
+    font-size: 1.1em;
+  }
+
+  /* home */
+  #home {
+    width: 80%;
+    margin: auto;
+  }
+
+  #home img {
+    width: 50%;
+  }
+
+  #home h4 {
+    font-size: 1em;
+  }
+
+  .job span {
+    font-size: 1em;
+  }
+
+  .job h2 {
+    font-size: 1.5em;
+  }
+
+  .job h3 {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  /* about */
+  .about {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .about p {
+    font-size: 0.9em;
+    width: 85%;
+    margin-top: 1.5em;
+    margin-left: 0em;
+  }
+
+  .about img {
+    width: 13em;
+    height: 13em;
+  }
+
+  .about .box {
+    width: 6.8em;
+    height: 6.8em;
+    top: 1.3em;
+    left: -1.2em;
+  }
+
+  /* collections */
+  #collections .row {
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card .image {
+    position: relative;
+  }
+
+  /* contact */
+  #contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #author {
+    width: 90%;
+    margin: 0px auto;
+    box-shadow: none;
+  }
+
+  .form {
+    width: 100%;
+    margin: 50px auto 0;
+    box-shadow: none;
+  }
+
+  /* footer */
+  footer .row {
+    padding: 0 0 0 0.5em 2.5em;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+}
